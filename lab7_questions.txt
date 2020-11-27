@@ -19,3 +19,21 @@ Assemblage -> Traduction du language assembleur en un fichier binaire de donnée
 
 5.La fonction max et min seront remplacées par leur binaire correspondant à l'étape d'éditions de liens.
 
+6.Création de l'archive examen avec "mkdir examen"
+Création des fichiers min.h, min.c et testmin.c avec gedit
+Création de l'executable avec "gcc -Wall testmin.c min.c"
+Renomme l'executable avec "mv a.out prog_q6"
+En executant "./prog_q6" on voit le min = 2
+
+7.Création des fichiers var.h, var.c et testvar.c avec gedit
+Création de l'executable avec "gcc -Wall testvar.c var.c"
+Renomme l'executable avec "mv a.out prog_q7"
+En executant "./prog_q7" on voit la variance = 7.6
+
+8.Création du fichier test.c avec gedit
+Création de l'executable avec "gcc -Wall test.c ../max.c min.c var.c"
+Renomme l'executable avec "mv a.out prog_q8"
+En executant "./prog_q8" on voit :
+le maximum est 30
+le minimum est 0
+la varience est 55.799999
