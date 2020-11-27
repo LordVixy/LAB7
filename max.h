@@ -1,5 +1,5 @@
-#ifndef H_MAX
-#define H_MAX
+#ifndef H_max_h
+#define H_max_h
 
     void max(int tab[],int n, int *max);
 

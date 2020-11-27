@@ -1,0 +1,21 @@
+1. Création des fichiers max.h max.c et testmax.c en utilisant la commande "gedit max.h"
+
+2. Il faut absolument compiler max.c ET testmax.C
+	- gcc -Wall max.c testmax.c puis renommer le fichier "a.out" executable
+	ou
+	- gcc -Wall max.c testmax.c -c
+	  puis gcc -Wall max.o testmax.o -o prog_q2.exe
+	Ainsi on crée l'éxecutable prog_q2.exe qu'on execute avec
+	la commande ./prog_q2.exe => affichage "le max est 9"
+
+3. "gcc -E testmax.c -o testmax.i" -> préprocesseur (conversion *.s en *.i)
+"gcc -S testmax.i" -> compilation (conversion *.i en *.s)
+"gcc -c testmax.s" -> assemblage (conversion *.s en *.o)
+On pouvait passer toutes ces étapes avec la commande "gcc -c testmax.c"
+
+4.Préprocessing -> Simplification du *.c : Remplace les variables en leur valeur numérique dans tout le programme, génère le *.i
+Compilation -> Traduction du *.i en language assembleur : des fonctions simples et connues par la machine.
+Assemblage -> Traduction du language assembleur en un fichier binaire de données. Fichier contenant les instructions diréctes pour le processeur, composé de 0 et de 1.
+
+5.La fonction max et min seront remplacées par leur binaire correspondant à l'étape d'éditions de liens.
+

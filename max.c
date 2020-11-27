@@ -1,12 +1,12 @@
-#include <stdio.h>
 #include "max.h"
 
+void max(int t[], int n, int *max){
+	int val_max=0;
+	for (int i=0; i<n; i++)
+		{
+			if (t[i] > val_max)
+				val_max = t[i];
+		}
 
-void max(int tab[],int n, int *max){
-    *max = tab[0];
-        for (int i=1; i<=n-2; i++){
-                if (tab[i]>*max){
-                        *max = tab[i];
-                }
-        }
+		*max = val_max;
 }
