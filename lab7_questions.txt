@@ -8,7 +8,7 @@
 	Ainsi on crée l'éxecutable prog_q2.exe qu'on execute avec
 	la commande ./prog_q2.exe => affichage "le max est 9"
 
-3. "gcc -E testmax.c -o testmax.i" -> préprocesseur (conversion *.s en *.i)
+3. "gcc -E testmax.c -o testmax.i" -> préprocesseur (conversion *.c en *.i)
 "gcc -S testmax.i" -> compilation (conversion *.i en *.s)
 "gcc -c testmax.s" -> assemblage (conversion *.s en *.o)
 On pouvait passer toutes ces étapes avec la commande "gcc -c testmax.c"
